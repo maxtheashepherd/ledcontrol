@@ -27,7 +27,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/maxtheashepherd/ledcontrol/tree/master/icon">
+  <a href="https://github.com/maxtheashepherd/ledcontrol/icon">
     <img src="128x128.png" alt="Logo" width="80" height="80">
   </a>
 
