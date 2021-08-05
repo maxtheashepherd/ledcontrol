@@ -66,10 +66,23 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
+   
   </ol>
 </details>
+
+<!-- LICENSE -->
+## License
+
+Distributed under the MIT License. See `LICENSE` for more information.
+
+
+
+<!-- CONTACT -->
+## Contact
+
+Max Shepherd - [@Max__Shepherd](https://twitter.com/Max__Shepherd) - maxtheashepherd@gmail.com
+
+Project Link: [https://github.com/maxtheashepherd/ledcontrol](https://github.com/maxtheashepherd/ledcontrol)
