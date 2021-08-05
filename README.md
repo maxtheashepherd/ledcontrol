@@ -8,9 +8,6 @@
   <p align="center">
     The software allows you to control lights on your apc mini control.
     <br />
-    <a href="https://github.com/maxtheashepherd/ledcontrol"><strong>Explore the docs »</strong></a>
-    <br />
-    <br />
     <a href="https://github.com/maxtheashepherd/ledcontrol/issues">Report Bug</a>
     ·
     <a href="https://github.com/maxtheashepherd/ledcontrol/issues">Request Feature</a>
