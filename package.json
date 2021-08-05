@@ -1,0 +1,43 @@
+{
+  "name": "AKAI APC Mini LED Controller",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "chromium-args": "--user-data-dir='storage'",
+  "window": {
+    "title": "APC Mini",
+    "icon": "scripts/icon/256x256.png",
+	"icon": "scripts/icon/256x256.png",
+    "width": 960,
+    "height": 733,
+	"min_width": 960,
+    "min_height": 733,
+    "position": "center",
+    "resizable": false,
+    "toolbar": false,
+    "frame": false,
+    "fullscreen": false,
+    "transparent": true
+  },
+  "dependencies": {
+    "easymidi": "^1.0.2",
+    "express": "^4.17.1",
+    "express-session": "^1.17.0",
+    "midi": "^1.0.0",
+    "node-gyp": "^6.0.0",
+    "nw": "^0.41.3",
+    "nw-vue-devtools": "^1.3.0",
+    "socket.io": "^2.3.0",
+    "web-midi-api": "^2.0.6",
+    "webmidi": "^2.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nw",
+    "install": "node-gyp rebuild"
+  },
+  "author": "",
+  "license": "ISC",
+  "gypfile": true
+}

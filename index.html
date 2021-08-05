@@ -1,0 +1,665 @@
+<html lang="en">
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta charset="utf-8" />
+    <meta http-equiv="etag" content="e68066ecfb85801145307c0a2785845a" />
+    <input style="display: none;" id='file' type='file' accept='.conf' onchange='openFile(event)'>
+	<script src="/scripts/jquery-3.2.1.min.js"></script>
+    <script src="/scripts/contextmenu/jquery.contextMenu.js"></script>
+    <script src="/scripts/contextmenu/jquery.ui.position.min.js"></script>
+	<script src='/scripts/jquery.keyframes.min.js'></script>
+    <link rel="stylesheet" href="/scripts/contextmenu/jquery.contextMenu.min.css">
+    <link rel="stylesheet" href="/scripts/css/style.css">
+    <input style="display: none;" id="save" type="file" accept='.conf' nwworkingdir="" nwsaveas/>
+</head>
+<body style="background-color:rgba(0,0,0,0);" class="prewarmup">
+	<p hidden>
+	MIDI In: <select id='selectmidiin'></select> 
+	MIDI PA: <select id='selectmidipassthrough'></select><br><br>
+	MIDI Out: <select id='selectmidiout'></select><br><br>
+	</p>
+	<p hidden id=piano><p>
+	
+		<div class="noop visual-focus-on" style="position:relative">
+			<div id="FONTS_CONTAINER"></div>
+			<div id="CSS_CONTAINER"></div>
+			<div id="SITE_BACKGROUND" style="height:100%;top:50px;min-height:calc(100vh - 50px);bottom:;left:;right:;position:" class="siteBackground">
+				<div id="SITE_BACKGROUND_previous_noPrev" data-position="absolute" data-align="" data-fitting="" class="siteBackgroundprevious">
+					<div id="SITE_BACKGROUNDpreviousImage" class="siteBackgroundpreviousImage"></div>
+					<div id="SITE_BACKGROUNDpreviousVideo" class="siteBackgroundpreviousVideo"></div>
+					<div id="SITE_BACKGROUND_previousOverlay_noPrev" class="siteBackgroundpreviousOverlay"></div>
+				</div>
+				<div id="SITE_BACKGROUND_current_c1dmp_iw1yd7y7_bg" style="top:0;height:100%;width:100%;background-color:rgba(255, 255, 255, 1);display:;position:absolute" data-position="absolute" data-align="top" data-fitting="fill" class="siteBackgroundcurrent">
+					<div id="SITE_BACKGROUND_currentImage_c1dmp_iw1yd7y7_bg" style="position:absolute;top:0;height:100%;width:100%" data-type="bgimage" data-height="100%" class="siteBackgroundcurrentImage"></div>
+					<div id="SITE_BACKGROUNDcurrentVideo" class="siteBackgroundcurrentVideo"></div>
+					<div id="SITE_BACKGROUND_currentOverlay_c1dmp_iw1yd7y7_bg" style="position:absolute;top:0;width:100%;height:100%" class="siteBackgroundcurrentOverlay"></div>
+				</div>
+			</div>
+			<div id="SITE_ROOT" class="SITE_ROOT" style="width:100%;min-width:980px;padding-bottom:0" aria-hidden="false">
+				<div id="masterPage" class="mesh-layout" data-mesh-layout="grid">
+					<header data-is-mobile="false" data-state="" data-site-width="980" data-header-top="0" style="position:relative;margin-top:0;left:0;margin-left:0;width:100%;min-width:980px;top:;bottom:;right:" class="fc1" id="SITE_HEADER">
+						<div style="left:0;width:100%" id="SITE_HEADERscreenWidthBackground" class="fc1screenWidthBackground"></div>
+						<div id="SITE_HEADERcenteredContent" class="fc1centeredContent">
+							<div style="margin-left:calc((100% - 980px) / 2);width:980px" id="SITE_HEADERbg" class="fc1bg"></div>
+							<div id="SITE_HEADERinlineContent" class="fc1inlineContent">
+								<div id="SITE_HEADERinlineContent-gridWrapper" data-mesh-internal="true">
+									<div id="SITE_HEADERinlineContent-gridContainer" data-mesh-internal="true">
+										<div id="comp-k1qi16h7" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="14" data-height="14" style="top:;bottom:;left:;right:;width:14px;height:14px;position:" class="style-k1qi0d0z" data-state="desktop shouldUseFlex center"></div>
+										<div id="comp-k1qi14k4" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="14" data-height="14" style="top:;bottom:;left:;right:;width:14px;height:14px;position:" class="style-k1qi0d0z" data-state="desktop shouldUseFlex center"></div>
+										<div style="top:;bottom:;left:;right:;-webkit-app-region: drag;position:" class="style-k1qhwwtv the-node2" id="comp-k1qhu63w">			
+											<div class="style-k1qhwwtvinlineContent" id="comp-k1qhu63winlineContent">
+												<div id="comp-k1qhu63winlineContent-gridWrapper" data-mesh-internal="true">
+													<div id="comp-k1qhu63winlineContent-gridContainer" data-mesh-internal="true">
+														<div id="comp-k1qhu63wbg" class="style-k1qhwwtvbg" >
+															<fl><span style="-webkit-app-region:none;" class="settings">≡</span></fl>
+														</div>
+														<div id="comp-k1qj2jrn" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="18" data-height="21" style="top:;bottom:;left:;right:;width:18px;height:21px;position:" class="style-k1qj2y6n" data-state="desktop shouldUseFlex center">
+															<div id="comp-k1qj2jrnlink" class="style-k1qj2y6nlink miniWindow"style="-webkit-app-region:none;">
+																<span id="comp-k1qj2jrnlabel" class="style-k1qj2y6nlabel">-</span>
+															</div>
+														</div>
+														<div id="comp-k1qi1krc" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="18" data-height="20" style="top:;bottom:;left:;right:;width:18px;height:20px;position:" class="style-k1qj128i" data-state="desktop shouldUseFlex center">
+															<div id="comp-k1qi1krclink" class="style-k1qj128ilink resizeWindow"style="-webkit-app-region:none;">
+																<span id="comp-k1qi1krclabel" class="style-k1qj128ilabel">❐</span>
+															</div>
+														</div>
+														<div id="comp-k1qhyjbn" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="18" data-height="20" style="top:;bottom:;left:;right:;width:18px;height:20px;position:" class="style-k1qi0d0z" data-state="desktop shouldUseFlex center">
+															<div id="comp-k1qhyjbnlink" class="style-k1qi0d0zlink closeWindow" style="-webkit-app-region:none;" >
+																<span id="comp-k1qhyjbnlabel" class="style-k1qi0d0zlabel ">X</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</header>
+					<main data-is-mobile="false" data-is-mesh="true" data-site-width="980" style="left:0;margin-left:0;width:100%;min-width:980px;top:0;bottom:;right:;position:" class="pc1" data-state="" id="PAGES_CONTAINER">
+						<div style="left:0" id="PAGES_CONTAINERscreenWidthBackground" class="pc1screenWidthBackground"></div>
+						<div style="position:relative" id="PAGES_CONTAINERcenteredContent" class="pc1centeredContent">
+							<div style="display:none" id="PAGES_CONTAINERbg" class="pc1bg"></div>
+							<div style="position:relative" id="PAGES_CONTAINERinlineContent" class="pc1inlineContent">
+								<div style="width:100%">
+									<div data-ismobile="false" data-is-mesh-layout="true" style="height:100%;left:0;position:relative;top:;bottom:;right:" class="p1" id="c1dmp">
+										<div style="margin-left:calc((100% - 980px) / 2);width:980px" id="c1dmpbg" class="p1bg"></div>
+										<div class="p1inlineContent" id="c1dmpinlineContent">
+											<div id="c1dmpinlineContent-gridWrapper" data-mesh-internal="true">
+												<div id="c1dmpinlineContent-gridContainer" data-mesh-internal="true">
+													<div style="top:;bottom:;left:;right:;position:" class="style-k1qlseos" id="comp-k1qhs7xi">
+														<div id="comp-k1qhs7xibg" class="style-k1qlseosbg"></div>
+														<div class="style-k1qlseosinlineContent" id="comp-k1qhs7xiinlineContent">
+															<div id="comp-k1qhs7xiinlineContent-gridWrapper" data-mesh-internal="true">
+																<div id="comp-k1qhs7xiinlineContent-gridContainer" data-mesh-internal="true">
+																	<div data-svg-id="128976_7e546aa575a14615b82dc7561c2949f9.svg" data-svg-type="color" data-display-mode="fit" data-viewbox="0 0 622.3 165.7" data-preserve-viewbox="ignore" style="top:;bottom:;left:;right:;width:169px;height:45px;position:" class="style-k1qjk599" id="comp-k1qjk52n">
+																		<div id="comp-k1qjk52nlink" class="style-k1qjk599link">
+																			<div style="opacity:1" class="style-k1qjk599_comp-k1qjk52n style-k1qjk599_non-scaling-stroke style-k1qjk599svg" id="comp-k1qjk52nsvg">
+																				<?xml version="1.0" encoding="UTF-8"?>
+																				<svg preserveAspectRatio="xMidYMid meet" data-bbox="0 0 622.3 165.7" viewBox="0 0 622.3 165.7" xmlns="http://www.w3.org/2000/svg" data-type="color" role="img">
+																					<g>
+																						<path fill="#d7172f" d="M597.1 0v112.6h-40V0h40z" data-color="1"/>
+																						<path d="M242.3 69.4h16.2l56.2 43.2h84.6L411 92.7h81l12.4 19.9H549L477.4 0h-52.1l-66 105.3-64.7-49.8 60-55.5H306l-45 41.4h-18.7V0h-40v112.6h40V69.4zm208.9-43.3l26 42.3H426l25.2-42.3z" fill="#d7172f" data-color="1"/>
+																						<path d="M56.4 92.7h81l12.4 19.9h44.5L122.7 0h-52L0 112.6h44.6l11.8-19.9zm40.1-66.6l25.9 42.3H71.3l25.2-42.3z" fill="#d7172f" data-color="1"/>
+																						<path d="M29.7 131H0v34.7h9.4v-13.5h20.3c4.4 0 8.1-3.6 8.1-8.1v-5c-.1-4.5-3.7-8.1-8.1-8.1zm-.7 11.2c0 2.1-2.1 2.2-2.1 2.2H9.5v-5.5h17.4s2.1 0 2.1 2.2v1.1z" fill="#d7172f" data-color="1"/>
+																						<path d="M89.8 147.8c.1-.1.1-.2.2-.4 0-.1.1-.2.1-.3.4-.9.6-1.8.6-2.9v-5.1c0-1.7-.5-3.2-1.4-4.5-1.4-2.2-3.9-3.6-6.7-3.6H53v34.7h9.4v-13.5h13.2l8.4 13.5h9.6l-8.4-14c2-.6 3.6-2 4.6-3.9zm-8-5.6c0 2.1-2.1 2.2-2.1 2.2H62.3v-5.5h17.4s2.1 0 2.1 2.2v1.1z" fill="#d7172f" data-color="1"/>
+																						<path d="M138.2 131h-24.1c-4.5 0-8.1 3.6-8.1 8.1v18.4c0 4.5 3.6 8.2 8.1 8.2h24.1c4.4 0 8.1-3.8 8.1-8.2v-18.4c0-4.5-3.6-8.1-8.1-8.1zm-1.2 24.5c0 1.3-1 2.3-2.3 2.3h-17.1c-1.3 0-2.3-1-2.3-2.3v-14.4c0-1.2 1-2.3 2.3-2.3h17.1c1.2 0 2.3 1 2.3 2.3v14.4z" fill="#d7172f" data-color="1"/>
+																						<path fill="#d7172f" d="M161.6 165.7h9.4v-13.5h25.9v-7.8H171V139h28.2v-8h-37.6v34.7z" data-color="1"/>
+																						<path fill="#d7172f" d="M214.5 165.7h37.6v-8h-28.3v-5.5h26v-7.8h-26v-5.5h28.3V131h-37.6v34.7z" data-color="1"/>
+																						<path d="M297.6 144.4h-19.4s-2.1-.1-2.1-2.2v-1.1c0-2.2 2.1-2.2 2.1-2.2h25V131h-27.7c-4.4 0-8.1 3.6-8.1 8.1v5c0 4.3 3.4 7.8 7.7 8h20s2.1 0 2.1 2.2v1.1c0 2.1-2.1 2.2-2.1 2.2h-26.5v8.1h29c4.4 0 8.1-3.8 8.1-8.2v-5c0-4.5-3.6-8.1-8.1-8.1z" fill="#d7172f" data-color="1"/>
+																						<path d="M348.9 144.4h-19.3s-2.1-.1-2.1-2.2v-1.1c0-2.2 2.1-2.2 2.1-2.2h24.9V131h-27.7c-4.4 0-8.1 3.6-8.1 8.1v5c0 4.3 3.4 7.8 7.7 8h18.7s3.3 0 3.3 2.2v1.1c0 2.1-3.3 2.2-3.3 2.2h-25.2v8.1h28.9c4.5 0 8.1-3.8 8.1-8.2v-5c0-4.5-3.6-8.1-8-8.1z" fill="#d7172f" data-color="1"/>
+																						<path fill="#d7172f" d="M379.9 131v34.7h-10.2V131h10.2z" data-color="1"/>
+																						<path d="M427.5 131h-24.1c-4.5 0-8.1 3.6-8.1 8.1v18.4c0 4.5 3.6 8.2 8.1 8.2h24.1c4.5 0 8.1-3.8 8.1-8.2v-18.4c0-4.5-3.6-8.1-8.1-8.1zm-1.2 24.5c0 1.3-1 2.3-2.3 2.3h-17.1c-1.3 0-2.3-1-2.3-2.3v-14.4c0-1.2 1-2.3 2.3-2.3H424c1.2 0 2.3 1 2.3 2.3v14.4z" fill="#d7172f" data-color="1"/>
+																						<path fill="#d7172f" d="M478.3 153.7L463.9 131h-13v34.7h9.6v-23l14.6 23h12.8V131h-9.6v22.7z" data-color="1"/>
+																						<path d="M515.7 131L500 165.7h10.7l2.7-6h19.4l2.7 6h10.7L530.5 131h-14.8zm1.1 21.3l6.3-14 6.3 14h-12.6z" fill="#d7172f" data-color="1"/>
+																						<path fill="#d7172f" d="M568.3 157.7V131H559v34.7h36.4v-8h-27.1z" data-color="1"/>
+																						<path d="M616 8.4c1.3-.5 1.9-1.1 1.9-2.2 0-1-.6-1.9-1.5-2.2-.5-.2-.9-.2-2.1-.2h-3.8v8.8h2V9.1h1.3c1.5 0 1.9.5 2 2.4.1.7.1.9.2 1.1h1.9c-.2-.5-.3-.5-.4-1.5 0-1.9-.3-2.3-1.5-2.7m-1.8-.7h-1.8V5.3h1.8c1.2 0 1.7.3 1.7 1.1 0 .9-.6 1.3-1.7 1.3" fill="#d7172f" data-color="1"/>
+																						<path d="M614.3.2c-4.6 0-8.2 3.6-8.2 8.1 0 4.4 3.6 8.1 8.1 8.1s8.1-3.6 8.1-8.1c0-4.4-3.6-8.1-8-8.1m-.1 14.8c-3.6 0-6.6-3-6.6-6.7s2.9-6.7 6.5-6.7c3.7 0 6.6 3 6.6 6.8 0 3.6-2.9 6.6-6.5 6.6" fill="#d7172f" data-color="1"/>
+																					</g>
+																				</svg>
+																			</div>
+																		</div>
+																	</div>
+																	<div data-svg-id="128976_8d69fca95b2845e7b579f47e36ba8a2b.svg" data-svg-type="shape" data-display-mode="fit" data-strokewidth="0" data-viewbox="0 0 182.9 28.8" data-preserve-viewbox="ignore" style="top:;bottom:;left:;right:;width:234px;height:37px;position:" class="style-k1qjk599" id="comp-k1qjmuo9">
+																		<div id="comp-k1qjmuo9link" class="style-k1qjk599link">
+																			<div style="stroke-width:0;fill-opacity:1;stroke:#5E97FF;stroke-opacity:1;fill:rgba(255, 255, 255, 1)" class="style-k1qjk599_comp-k1qjmuo9 style-k1qjk599_non-scaling-stroke style-k1qjk599svg" id="comp-k1qjmuo9svg">
+																				<?xml version="1.0" encoding="UTF-8"?>
+																				<svg preserveAspectRatio="xMidYMid meet" data-bbox="0 0 182.9 28.9" viewBox="0 0 182.9 28.9" xmlns="http://www.w3.org/2000/svg" data-type="shape" role="img">
+																					<g>
+																						<path d="M145.6 12.6c-1.2-.9-2.8-1.3-4.6-1.3-1.8 0-3.4.4-4.7 1.3-.6.4-1.1 1-1.7 1.8-.3-.6-.7-1.1-1.2-1.5-1.2-1.1-2.8-1.6-4.7-1.6-2.4 0-4.4.9-6.1 2.7v-2.2H119v17h3.6v-9.4c0-1.7.5-2.8 1.3-3.6.9-.8 2.1-1.2 3.7-1.2.9 0 1.7.2 2.4.5s1.1.8 1.3 1.4c.2.5.3 1.4.3 2.8v9.6h3.6v-9.5c0-1.4.3-2.4.7-3 .8-1.2 2.1-1.7 4.1-1.8 1.1 0 2.1.2 2.8.6.7.4 1 .8 1.2 1.5.1.6.2 1.5.2 2.6v9.5h3.6V18.3c0-.8 0-1.4-.1-1.9 0-1.6-.8-2.9-2.1-3.8z"/>
+																						<path d="M151.6 10.7h3.6V7.9h-3.6v2.8z"/>
+																						<path d="M151.6 28.8h3.6v-17h-3.6v17z"/>
+																						<path d="M168.8 11.3c-2 0-3.7.5-5 1.4-.4.3-.8.7-1.3 1.2v-2.2h-3.6v17h3.6v-8.5c0-1.7.2-2.9.5-3.6.8-1.5 2.3-2.2 4.8-2.2 2.2 0 3.4.6 3.8 1.8.2.5.3 1.5.3 3v9.4h3.6v-9.7c0-2.2-.2-3.7-.5-4.5-.8-2-3-3.1-6.2-3.1z"/>
+																						<path d="M179.3 11.8v17h3.6v-17h-3.6z"/>
+																						<path d="M182.9 10.7V7.9h-3.6v2.8h3.6z"/>
+																						<path d="M19.2 5.8c1.4-2.1 3.7-3.1 5.8-3.1h12.3v26H40V0H25c-3 0-6 1.3-8.1 4.2L0 28.8h3.4l15.8-23z"/>
+																						<path d="M36.4 18H11.8L4.4 28.8h3.3l5.6-8.1h20.3v8.1h2.8V18z"/>
+																						<path d="M36.4 3.6H25c-1.8 0-3.9.9-5 2.6L12.5 17h23.9V3.6zm-2.8 10.7h-16l4.5-6.5C22.7 7 24 6.4 25 6.4h8.7l-.1 7.9z"/>
+																						<path d="M77.3 14.8V5.9c0-3.3-2.6-5.9-5.9-5.9H43.7v28.8h2.7V2.7h25c1.8 0 3.2 1.4 3.2 3.2v8.9c0 1.8-1.4 3.2-3.2 3.2H47.3v10.8H50v-8.1h21.4c3.2 0 5.9-2.6 5.9-5.9"/>
+																						<path d="M71.4 3.6H47.3V17h24.1c1.3 0 2.3-1 2.3-2.3V5.8c-.1-1.1-1.1-2.2-2.3-2.2m-.5 10c0 .4-.3.8-.8.8H50v-8h20.1c.4 0 .8.3.8.8v6.4z"/>
+																						<path d="M110.4 8.7V5.9c0-1.3-1-2.3-2.3-2.3H86.3c-1.3 0-2.3 1-2.3 2.3v17c0 1.3 1 2.3 2.3 2.3h21.8c1.3 0 2.3-1 2.3-2.3v-2.8h-2.7v1.6c0 .4-.3.8-.8.8H87.6c-.4 0-.8-.3-.8-.8V7.1c0-.4.3-.8.8-.8h19.3c.4 0 .8.3.8.8v1.6h2.7z"/>
+																						<path d="M114.1 20.1h-2.7v2.8c0 1.8-1.4 3.2-3.2 3.2H86.4c-1.8 0-3.2-1.4-3.2-3.2v-17c0-1.8 1.4-3.2 3.2-3.2h21.8c1.8 0 3.2 1.4 3.2 3.2v2.8h2.7V5.9c0-3.3-2.6-5.9-5.9-5.9H86.4c-3.3 0-5.9 2.6-5.9 5.9v17c0 3.3 2.6 5.9 5.9 5.9h21.8c3.3 0 5.9-2.6 5.9-5.9v-2.8z"/>
+																					</g>
+																				</svg>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div style="top:;bottom:;left:;right:;position:" class="style-k1qjqr8t" id="comp-k1qjofks">
+														<div id="comp-k1qjofksbg" class="style-k1qjqr8tbg"></div>
+														<div class="style-k1qjqr8tinlineContent" id="comp-k1qjofksinlineContent">
+															<div id="comp-k1qjofksinlineContent-gridWrapper" data-mesh-internal="true">
+																<div id="comp-k1qjofksinlineContent-gridContainer" data-mesh-internal="true" class="the-node the-node3">
+																	<div id="comp-k1qjv85e" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjxbvv" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qjv85elink" class="g-transparent-a style-k1qjxbvvlink 56"><span style="visibility:hidden" id="comp-k1qjv85elabel" class="style-k1qjxbvvlabel">56</span></div></li></div>
+																	<div id="comp-k1qjyk4q" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qjyk4qlink" class="g-transparent-a style-k1qjyk5x1link 57"><span style="visibility:hidden" id="comp-k1qjyk4qlabel" class="style-k1qjyk5x1label">57</span></div></li></div>
+																	<div id="comp-k1qjymt4" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qjymt4link" class="g-transparent-a style-k1qjyk5x1link 58"><span style="visibility:hidden" id="comp-k1qjymt4label" class="style-k1qjyk5x1label">58</span></div></li></div>
+																	<div id="comp-k1qjyrqp" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qjyrqplink" class="g-transparent-a style-k1qjyk5x1link 59"><span style="visibility:hidden" id="comp-k1qjyrqplabel" class="style-k1qjyk5x1label">59</span></div></li></div>
+																	<div id="comp-k1qk29mj" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk29mjlink" class="g-transparent-a style-k1qjyk5x1link 60"><span style="visibility:hidden" id="comp-k1qk29mjlabel" class="style-k1qjyk5x1label">60</span></div></li></div>
+																	<div id="comp-k1qk29nf" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk29nflink" class="g-transparent-a style-k1qjyk5x1link 61"><span style="visibility:hidden" id="comp-k1qk29nflabel" class="style-k1qjyk5x1label">61</span></div></li></div>
+																	<div id="comp-k1qk29o5" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk29o5link" class="g-transparent-a style-k1qjyk5x1link 62"><span style="visibility:hidden" id="comp-k1qk29o5label" class="style-k1qjyk5x1label">62</span></div></li></div>
+																	<div id="comp-k1qk29ow" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk29owlink" class="g-transparent-a style-k1qjyk5x1link 63"><span style="visibility:hidden" id="comp-k1qk29owlabel" class="style-k1qjyk5x1label">63</span></div></li></div>
+																	<div id="comp-k1qjz3mq" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qjz3mqlink" class="g-transparent-a style-k1qjyk5x1link 48"><span style="visibility:hidden" id="comp-k1qjz3mqlabel" class="style-k1qjyk5x1label">48</span></div></li></div>
+																	<div id="comp-k1qjyzu7" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qjyzu7link" class="g-transparent-a style-k1qjyk5x1link 49"><span style="visibility:hidden" id="comp-k1qjyzu7label" class="style-k1qjyk5x1label">49</span></div></li></div>
+																	<div id="comp-k1qjywwe" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qjywwelink" class="g-transparent-a style-k1qjyk5x1link 50"><span style="visibility:hidden" id="comp-k1qjywwelabel" class="style-k1qjyk5x1label">50</span></div></li></div>
+																	<div id="comp-k1qjyus1" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qjyus1link" class="g-transparent-a style-k1qjyk5x1link 51"><span style="visibility:hidden" id="comp-k1qjyus1label" class="style-k1qjyk5x1label">51</span></div></li></div>
+																	<div id="comp-k1qk29s3" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk29s3link" class="g-transparent-a style-k1qjyk5x1link 52"><span style="visibility:hidden" id="comp-k1qk29s3label" class="style-k1qjyk5x1label">52</span></div></li></div>
+																	<div id="comp-k1qk29rc" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk29rclink" class="g-transparent-a style-k1qjyk5x1link 53"><span style="visibility:hidden" id="comp-k1qk29rclabel" class="style-k1qjyk5x1label">53</span></div></li></div>
+																	<div id="comp-k1qk29qe" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk29qelink" class="g-transparent-a style-k1qjyk5x1link 54"><span style="visibility:hidden" id="comp-k1qk29qelabel" class="style-k1qjyk5x1label">54</span></div></li></div>
+																	<div id="comp-k1qk29pm" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk29pmlink" class="g-transparent-a style-k1qjyk5x1link 55"><span style="visibility:hidden" id="comp-k1qk29pmlabel" class="style-k1qjyk5x1label">55</span></div></li></div>
+																	<div id="comp-k1qk1lya" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk1lyalink" class="g-transparent-a style-k1qjyk5x1link 40"><span style="visibility:hidden" id="comp-k1qk1lyalabel" class="style-k1qjyk5x1label">40</span></div></li></div>
+																	<div id="comp-k1qk1izp" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk1izplink" class="g-transparent-a style-k1qjyk5x1link 41"><span style="visibility:hidden" id="comp-k1qk1izplabel" class="style-k1qjyk5x1label">41</span></div></li></div>
+																	<div id="comp-k1qk1bne" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk1bnelink" class="g-transparent-a style-k1qjyk5x1link 42"><span style="visibility:hidden" id="comp-k1qk1bnelabel" class="style-k1qjyk5x1label">42</span></div></li></div>
+																	<div id="comp-k1qk1bmr" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk1bmrlink" class="g-transparent-a style-k1qjyk5x1link 43"><span style="visibility:hidden" id="comp-k1qk1bmrlabel" class="style-k1qjyk5x1label">43</span></div></li></div>
+																	<div id="comp-k1qk29su" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk29sulink" class="g-transparent-a style-k1qjyk5x1link 44"><span style="visibility:hidden" id="comp-k1qk29sulabel" class="style-k1qjyk5x1label">44</span></div></li></div>
+																	<div id="comp-k1qk29tm" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk29tmlink" class="g-transparent-a style-k1qjyk5x1link 45"><span style="visibility:hidden" id="comp-k1qk29tmlabel" class="style-k1qjyk5x1label">45</span></div></li></div>
+																	<div id="comp-k1qk29ue" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk29uelink" class="g-transparent-a style-k1qjyk5x1link 46"><span style="visibility:hidden" id="comp-k1qk29uelabel" class="style-k1qjyk5x1label">46</span></div></li></div>
+																	<div id="comp-k1qk29va" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk29valink" class="g-transparent-a style-k1qjyk5x1link 47"><span style="visibility:hidden" id="comp-k1qk29valabel" class="style-k1qjyk5x1label">47</span></div></li></div>
+																	<div id="comp-k1qk1bkr" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk1bkrlink" class="g-transparent-a style-k1qjyk5x1link 32"><span style="visibility:hidden" id="comp-k1qk1bkrlabel" class="style-k1qjyk5x1label">32</span></div></li></div>
+																	<div id="comp-k1qk1blb" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk1blblink" class="g-transparent-a style-k1qjyk5x1link 33"><span style="visibility:hidden" id="comp-k1qk1blblabel" class="style-k1qjyk5x1label">33</span></div></li></div>
+																	<div id="comp-k1qk1bls" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk1blslink" class="g-transparent-a style-k1qjyk5x1link 34"><span style="visibility:hidden" id="comp-k1qk1blslabel" class="style-k1qjyk5x1label">34</span></div></li></div>
+																	<div id="comp-k1qk1bma" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk1bmalink" class="g-transparent-a style-k1qjyk5x1link 35"><span style="visibility:hidden" id="comp-k1qk1bmalabel" class="style-k1qjyk5x1label">35</span></div></li></div>
+																	<div id="comp-k1qk29ya" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk29yalink" class="g-transparent-a style-k1qjyk5x1link 36"><span style="visibility:hidden" id="comp-k1qk29yalabel" class="style-k1qjyk5x1label">36</span></div></li></div>
+																	<div id="comp-k1qk29xk" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk29xklink" class="g-transparent-a style-k1qjyk5x1link 37"><span style="visibility:hidden" id="comp-k1qk29xklabel" class="style-k1qjyk5x1label">37</span></div></li></div>
+																	<div id="comp-k1qk29wt" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk29wtlink" class="g-transparent-a style-k1qjyk5x1link 38"><span style="visibility:hidden" id="comp-k1qk29wtlabel" class="style-k1qjyk5x1label">38</span></div></li></div>
+																	<div id="comp-k1qk29w2" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk29w2link" class="g-transparent-a style-k1qjyk5x1link 39"><span style="visibility:hidden" id="comp-k1qk29w2label" class="style-k1qjyk5x1label">39</span></div></li></div>
+																	<div id="comp-k1qk1xwz" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk1xwzlink" class="g-transparent-a style-k1qjyk5x1link 24"><span style="visibility:hidden" id="comp-k1qk1xwzlabel" class="style-k1qjyk5x1label">24</span></div></li></div>
+																	<div id="comp-k1qk1xxj" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk1xxjlink" class="g-transparent-a style-k1qjyk5x1link 25"><span style="visibility:hidden" id="comp-k1qk1xxjlabel" class="style-k1qjyk5x1label">25</span></div></li></div>
+																	<div id="comp-k1qk1xy2" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk1xy2link" class="g-transparent-a style-k1qjyk5x1link 26"><span style="visibility:hidden" id="comp-k1qk1xy2label" class="style-k1qjyk5x1label">26</span></div></li></div>
+																	<div id="comp-k1qk1xym" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk1xymlink" class="g-transparent-a style-k1qjyk5x1link 27"><span style="visibility:hidden" id="comp-k1qk1xymlabel" class="style-k1qjyk5x1label">27</span></div></li></div>
+																	<div id="comp-k1qk2rkb" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk2rkblink" class="g-transparent-a style-k1qjyk5x1link 28"><span style="visibility:hidden" id="comp-k1qk2rkblabel" class="style-k1qjyk5x1label">28</span></div></li></div>
+																	<div id="comp-k1qk2rla" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk2rlalink" class="g-transparent-a style-k1qjyk5x1link 29"><span style="visibility:hidden" id="comp-k1qk2rlalabel" class="style-k1qjyk5x1label">29</span></div></li></div>
+																	<div id="comp-k1qk2rm8" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk2rm8link" class="g-transparent-a style-k1qjyk5x1link 30"><span style="visibility:hidden" id="comp-k1qk2rm8label" class="style-k1qjyk5x1label">30</span></div></li></div>
+																	<div id="comp-k1qk2rnc" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk2rnclink" class="g-transparent-a style-k1qjyk5x1link 31"><span style="visibility:hidden" id="comp-k1qk2rnclabel" class="style-k1qjyk5x1label">31</span></div></li></div>
+																	<div id="comp-k1qk1y0y" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk1y0ylink" class="g-transparent-a style-k1qjyk5x1link 16"><span style="visibility:hidden" id="comp-k1qk1y0ylabel" class="style-k1qjyk5x1label">16</span></div></li></div>
+																	<div id="comp-k1qk1y0e" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk1y0elink" class="g-transparent-a style-k1qjyk5x1link 17"><span style="visibility:hidden" id="comp-k1qk1y0elabel" class="style-k1qjyk5x1label">17</span></div></li></div>
+																	<div id="comp-k1qk1xzq" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk1xzqlink" class="g-transparent-a style-k1qjyk5x1link 18"><span style="visibility:hidden" id="comp-k1qk1xzqlabel" class="style-k1qjyk5x1label">18</span></div></li></div>
+																	<div id="comp-k1qk1xz6" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk1xz6link" class="g-transparent-a style-k1qjyk5x1link 19"><span style="visibility:hidden" id="comp-k1qk1xz6label" class="style-k1qjyk5x1label">19</span></div></li></div>
+																	<div id="comp-k1qk2rr7" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk2rr7link" class="g-transparent-a style-k1qjyk5x1link 20"><span style="visibility:hidden" id="comp-k1qk2rr7label" class="style-k1qjyk5x1label">20</span></div></li></div>
+																	<div id="comp-k1qk2rq4" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk2rq4link" class="g-transparent-a style-k1qjyk5x1link 21"><span style="visibility:hidden" id="comp-k1qk2rq4label" class="style-k1qjyk5x1label">21</span></div></li></div>
+																	<div id="comp-k1qk2rp7" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk2rp7link" class="g-transparent-a style-k1qjyk5x1link 22"><span style="visibility:hidden" id="comp-k1qk2rp7label" class="style-k1qjyk5x1label">22</span></div></li></div>
+																	<div id="comp-k1qk2ro9" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk2ro9link" class="g-transparent-a style-k1qjyk5x1link 23"><span style="visibility:hidden" id="comp-k1qk2ro9label" class="style-k1qjyk5x1label">23</span></div></li></div>
+																	<div id="comp-k1qk1y1j" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk1y1jlink" class="g-transparent-a style-k1qjyk5x1link 8"><span style="visibility:hidden" id="comp-k1qk1y1jlabel" class="style-k1qjyk5x1label">8</span></div></li></div>
+																	<div id="comp-k1qk1y22" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk1y22link" class="g-transparent-a style-k1qjyk5x1link 9"><span style="visibility:hidden" id="comp-k1qk1y22label" class="style-k1qjyk5x1label">9</span></div></li></div>
+																	<div id="comp-k1qk1y2m" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk1y2mlink" class="g-transparent-a style-k1qjyk5x1link 10"><span style="visibility:hidden" id="comp-k1qk1y2mlabel" class="style-k1qjyk5x1label">10</span></div></li></div>
+																	<div id="comp-k1qk1y36" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk1y36link" class="g-transparent-a style-k1qjyk5x1link 11"><span style="visibility:hidden" id="comp-k1qk1y36label" class="style-k1qjyk5x1label">11</span></div></li></div>
+																	<div id="comp-k1qk2rs4" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk2rs4link" class="g-transparent-a style-k1qjyk5x1link 12"><span style="visibility:hidden" id="comp-k1qk2rs4label" class="style-k1qjyk5x1label">12</span></div></li></div>
+																	<div id="comp-k1qk2rt1" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk2rt1link" class="g-transparent-a style-k1qjyk5x1link 13"><span style="visibility:hidden" id="comp-k1qk2rt1label" class="style-k1qjyk5x1label">13</span></div></li></div>
+																	<div id="comp-k1qk2rtz" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk2rtzlink" class="g-transparent-a style-k1qjyk5x1link 14"><span style="visibility:hidden" id="comp-k1qk2rtzlabel" class="style-k1qjyk5x1label">14</span></div></li></div>
+																	<div id="comp-k1qk2ruw" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk2ruwlink" class="g-transparent-a style-k1qjyk5x1link 15"><span style="visibility:hidden" id="comp-k1qk2ruwlabel" class="style-k1qjyk5x1label">15</span></div></li></div>
+																	<div id="comp-k1qk1y5j" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk1y5jlink" class="g-transparent-a style-k1qjyk5x1link 0"><span style="visibility:hidden" id="comp-k1qk1y5jlabel" class="style-k1qjyk5x1label">0</span></div></li></div>
+																	<div id="comp-k1qk1y4z" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk1y4zlink" class="g-transparent-a style-k1qjyk5x1link 1"><span style="visibility:hidden" id="comp-k1qk1y4zlabel" class="style-k1qjyk5x1label">1</span></div></li></div>
+																	<div id="comp-k1qk1y4a" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk1y4alink" class="g-transparent-a style-k1qjyk5x1link 2"><span style="visibility:hidden" id="comp-k1qk1y4alabel" class="style-k1qjyk5x1label">2</span></div></li></div>
+																	<div id="comp-k1qk1y3q" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk1y3qlink" class="g-transparent-a style-k1qjyk5x1link 3"><span style="visibility:hidden" id="comp-k1qk1y3qlabel" class="style-k1qjyk5x1label">3</span></div></li></div>
+																	<div id="comp-k1qk2ryy" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk2ryylink" class="g-transparent-a style-k1qjyk5x1link 4"><span style="visibility:hidden" id="comp-k1qk2ryylabel" class="style-k1qjyk5x1label">4</span></div></li></div>
+																	<div id="comp-k1qk2ry1" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk2ry1link" class="g-transparent-a style-k1qjyk5x1link 5"><span style="visibility:hidden" id="comp-k1qk2ry1label" class="style-k1qjyk5x1label">5</span></div></li></div>
+																	<div id="comp-k1qk2rwx" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk2rwxlink" class="g-transparent-a style-k1qjyk5x1link 6"><span style="visibility:hidden" id="comp-k1qk2rwxlabel" class="style-k1qjyk5x1label">6</span></div></li></div>
+																	<div id="comp-k1qk2rvz" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="88" data-height="37" style="top:;bottom:;left:;right:;width:88px;height:37px;position:" class="style-k1qjyk5x1" data-state="desktop shouldUseFlex center"><li><div id="comp-k1qk2rvzlink" class="g-transparent-a style-k1qjyk5x1link 7"><span style="visibility:hidden" id="comp-k1qk2rvzlabel" class="style-k1qjyk5x1label">7</span></div></li></div>
+																	<div style="top:;bottom:;left:;right:;position:" class="style-k1qkjvrw" id="comp-k1qlbkdi">
+																		<div id="comp-k1qlbkdibg" class="style-k1qkjvrwbg"></div>
+																		<div class="style-k1qkjvrwinlineContent" id="comp-k1qlbkdiinlineContent">
+																			<div id="comp-k1qlbkdiinlineContent-gridWrapper" data-mesh-internal="true">
+																				<div id="comp-k1qlbkdiinlineContent-gridContainer" data-mesh-internal="true">
+																					<div data-packed="true" style="top:;bottom:;left:;right:;width:40px;height:auto;position:;pointer-events:none" class="txtNew" id="comp-k1qldc9y">
+																						<h2 class="font_2 77" style="font-size:11px; text-align:center;">
+																							<span style="font-size:11px;">
+																								<span class="color_11"><span style="font-family:futura-lt-w01-book,sans-serif;">SOLO</span></span>
+																							</span>
+																						</h2>
+																					</div>
+																					<div data-packed="true" style="top:;bottom:;left:;right:;width:40px;height:auto;position:;pointer-events:none" class="txtNew" id="comp-k1qldh2d">
+																						<h2 class="font_2" style="font-size:11px; text-align:center;">
+																							<span style="font-size:11px;">
+																								<span class="color_11">
+																									<span style="font-family:futura-lt-w01-book,sans-serif;">REC</span>
+																								</span>
+																							</span>
+																						</h2>
+																						<h2 class="font_2" style="font-size:11px; text-align:center;">
+																							<span style="font-size:11px;">
+																								<span class="color_11">
+																									<span style="font-family:futura-lt-w01-book,sans-serif;">ARM</span>
+																								</span>
+																							</span>
+																						</h2>
+																					</div>
+																					<div data-packed="true" style="top:;bottom:;left:;right:;width:39px;height:auto;position:;pointer-events:none" class="txtNew" id="comp-k1qldm7z">
+																						<h2 class="font_2" style="font-size:11px; text-align:center;">
+																							<span style="font-size:11px;">
+																								<span class="color_11">
+																									<span style="font-family:futura-lt-w01-book,sans-serif;">MUTE</span>
+																								</span>
+																							</span>
+																						</h2>
+																					</div>
+																					<div data-packed="true" style="top:;bottom:;left:;right:;width:39px;height:auto;position:;pointer-events:none" class="txtNew" id="comp-k1qlgj5b">
+																						<h2 class="font_2" style="font-size:11px; text-align:center;">
+																							<span style="font-size:11px;">
+																								<span class="color_11">
+																									<span style="font-family:futura-lt-w01-book,sans-serif;">SELECT</span>
+																								</span>
+																							</span>
+																						</h2>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div id="comp-k1qk99r0-rotated-wrapper" data-mesh-internal="true">
+																		<div id="comp-k1qk99r0" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="36" data-height="37" style="top:;bottom:;left:;right:;width:36px;height:37px;position:;transform:rotate(270deg)" data-angle="270" class="style-k1qk82gm" data-state="desktop shouldUseFlex center">
+																			<div id="comp-k1qk99r0link" class="style-k1qk82gmlink">
+																				<span id="comp-k1qk99r0label" class="style-k1qk82gmlabel"></span>
+																			</div>
+																		</div>
+																	</div>
+																		<div id="comp-k1qk9zn4-rotated-wrapper" data-mesh-internal="true">
+																			<div id="comp-k1qk9zn4" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="36" data-height="37" style="top:;bottom:;left:;right:;width:36px;height:37px;position:;transform:rotate(270deg)" data-angle="270" class="style-k1qk82gm" data-state="desktop shouldUseFlex center">
+																				<div id="comp-k1qk9zn4link" class="style-k1qk82gmlink"><span id="comp-k1qk9zn4label" class="style-k1qk82gmlabel"></span></div>
+																			</div>
+																		</div>
+																	<div id="comp-k1qka31m-rotated-wrapper" data-mesh-internal="true">
+																		<div id="comp-k1qka31m" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="36" data-height="37" style="top:;bottom:;left:;right:;width:36px;height:37px;position:;transform:rotate(270deg)" data-angle="270" class="style-k1qk82gm" data-state="desktop shouldUseFlex center">
+																			<div id="comp-k1qka31mlink" class="style-k1qk82gmlink">
+																				<span id="comp-k1qka31mlabel" class="style-k1qk82gmlabel"></span>
+																			</div>
+																		</div>
+																	</div>
+																	<div id="comp-k1qka8pj-rotated-wrapper" data-mesh-internal="true">
+																		<div id="comp-k1qka8pj" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="36" data-height="37" style="top:;bottom:;left:;right:;width:36px;height:37px;position:;transform:rotate(270deg)" data-angle="270" class="style-k1qk82gm" data-state="desktop shouldUseFlex center">
+																			<div id="comp-k1qka8pjlink" class="style-k1qk82gmlink">
+																				<span id="comp-k1qka8pjlabel" class="style-k1qk82gmlabel"></span>
+																			</div>
+																		</div>
+																	</div>
+																	<div id="comp-k1qkacyb-rotated-wrapper" data-mesh-internal="true">
+																		<div id="comp-k1qkacyb" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="36" data-height="37" style="top:;bottom:;left:;right:;width:36px;height:37px;position:;transform:rotate(270deg)" data-angle="270" class="style-k1qk82gm" data-state="desktop shouldUseFlex center">
+																			<div id="comp-k1qkacyblink" class="style-k1qk82gmlink">
+																				<span id="comp-k1qkacyblabel" class="style-k1qk82gmlabel"></span>
+																			</div>
+																		</div>
+																	</div>
+																	<div id="comp-k1qkagsb-rotated-wrapper" data-mesh-internal="true">
+																		<div id="comp-k1qkagsb" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="36" data-height="37" style="top:;bottom:;left:;right:;width:36px;height:37px;position:;transform:rotate(270deg)" data-angle="270" class="style-k1qk82gm" data-state="desktop shouldUseFlex center">
+																			<div id="comp-k1qkagsblink" class="style-k1qk82gmlink">
+																				<span id="comp-k1qkagsblabel" class="style-k1qk82gmlabel"></span>
+																			</div>
+																		</div>
+																	</div>
+																		<div id="comp-k1qkakuw-rotated-wrapper" data-mesh-internal="true">
+																			<div id="comp-k1qkakuw" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="36" data-height="37" style="top:;bottom:;left:;right:;width:36px;height:37px;position:;transform:rotate(270deg)" data-angle="270" class="style-k1qk82gm" data-state="desktop shouldUseFlex center">
+																				<div id="comp-k1qkakuwlink" class="style-k1qk82gmlink">
+																					<span id="comp-k1qkakuwlabel" class="style-k1qk82gmlabel"></span>
+																				</div>
+																			</div>
+																		</div>
+																	<div style="top:;bottom:;left:;right:;position:" class="style-k1qkjvrw" id="comp-k1qlhp1y">
+																		<div id="comp-k1qlhp1ybg" class="style-k1qkjvrwbg"></div>
+																		<div class="style-k1qkjvrwinlineContent" id="comp-k1qlhp1yinlineContent">
+																			<div id="comp-k1qlhp1yinlineContent-gridWrapper" data-mesh-internal="true">
+																				<div id="comp-k1qlhp1yinlineContent-gridContainer" data-mesh-internal="true">
+																					<div data-packed="false" style="top:;bottom:;left:;right:;width:40px;height:auto;position:;min-height:21px;pointer-events:none" data-min-height="21" class="txtNew" id="comp-k1qlili8">
+																						<h2 class="font_2" style="font-size:10px; text-align:center;">
+																							<span style="font-size:10px;">
+																								<span class="color_11">
+																									<span style="font-family:futura-lt-w01-book,sans-serif;">STOP</span>
+																								</span>
+																							</span>
+																						</h2>
+																						<h2 class="font_2" style="font-size:10px; text-align:center;">
+																							<span style="font-size:10px;">
+																								<span class="color_11">
+																									<span style="font-family:futura-lt-w01-book,sans-serif;">ALL</span>
+																								</span>
+																							</span>
+																						</h2>
+																						<h2 class="font_2" style="font-size:10px; text-align:center;">
+																							<span style="font-size:10px;">
+																								<span class="color_11">
+																									<span style="font-family:futura-lt-w01-book,sans-serif;">CLIPS</span>
+																								</span>
+																							</span>
+																						</h2>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div id="comp-k1qkaol4-rotated-wrapper" data-mesh-internal="true">
+																		<div id="comp-k1qkaol4" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="36" data-height="37" style="top:;bottom:;left:;right:;width:36px;height:37px;position:;transform:rotate(270deg)" data-angle="270" class="style-k1qk82gm" data-state="desktop shouldUseFlex center">
+																			<div id="comp-k1qkaol4link" class="style-k1qk82gmlink">
+																				<span id="comp-k1qkaol4label" class="style-k1qk82gmlabel"></span>
+																			</div>
+																		</div>
+																	</div>
+																	<div style="top:;bottom:;left:;right:;position:" class="style-k1qkjvrw" id="comp-k1qkn0n1">
+																		<div id="comp-k1qkn0n1bg" class="style-k1qkjvrwbg"></div>
+																		<div class="style-k1qkjvrwinlineContent" id="comp-k1qkn0n1inlineContent">
+																			<div id="comp-k1qkn0n1inlineContent-gridWrapper" data-mesh-internal="true">
+																				<div id="comp-k1qkn0n1inlineContent-gridContainer" data-mesh-internal="true">
+																					<div data-svg-id="6b1da864ef84b466c566b1aac7ed2e1e_svgshape.v1.Triangle.svg" data-svg-type="shape" data-display-mode="stretch" data-strokewidth="0" data-viewbox="-20.924 -26.943 377 377" data-preserve-viewbox="ignore" style="top:;bottom:;left:;right:;width:18px;height:16px;position:" class="style-k1qkrtom" id="comp-k1qkrtjt">
+																						<div id="comp-k1qkrtjtlink" class="style-k1qkrtomlink">
+																							<div style="stroke-width:0;fill-opacity:1;stroke:rgba(65, 65, 65, 1);stroke-opacity:1;fill:rgba(199, 199, 199, 1)" class="style-k1qkrtom_comp-k1qkrtjt style-k1qkrtom_non-scaling-stroke style-k1qkrtomsvg" id="comp-k1qkrtjtsvg">
+																								<svg preserveAspectRatio="none" data-bbox="0 0 334.805 289.949" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 334.805 289.949" role="img">
+																									<g>
+																										<path d="M167.402 0l167.403 289.949H0L167.402 0z"/>
+																									</g>
+																								</svg>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div id="comp-k1qk7tr4-rotated-wrapper" data-mesh-internal="true">
+																		<div id="comp-k1qk7tr4" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="36" data-height="37" style="top:;bottom:;left:;right:;width:36px;height:37px;position:;transform:rotate(270deg)" data-angle="270" class="style-k1qk82gm" data-state="desktop shouldUseFlex center">
+																			<div id="comp-k1qk7tr4link" class="style-k1qk82gmlink "><span id="comp-k1qk7tr4label" class="style-k1qk82gmlabel"></span></div>
+																		</div>
+																	</div>
+																	<div style="top:;bottom:;left:;right:;position:" class="style-k1qkjvrw" id="comp-k1qkmvui">
+																		<div id="comp-k1qkmvuibg" class="style-k1qkjvrwbg"></div>
+																		<div class="style-k1qkjvrwinlineContent" id="comp-k1qkmvuiinlineContent">
+																			<div id="comp-k1qkmvuiinlineContent-gridWrapper" data-mesh-internal="true">
+																				<div id="comp-k1qkmvuiinlineContent-gridContainer" data-mesh-internal="true">
+																					<div data-svg-id="6b1da864ef84b466c566b1aac7ed2e1e_svgshape.v1.Triangle.svg" data-svg-type="shape" data-display-mode="stretch" data-strokewidth="0" data-viewbox="-20.924 -26.943 377 377" data-preserve-viewbox="ignore" style="top:;bottom:;left:;right:;width:18px;height:16px;position:" class="style-k1qkrtom" id="comp-k1qkt6sc">
+																						<div id="comp-k1qkt6sclink" class="style-k1qkrtomlink">
+																							<div style="transform:scale(1, -1);stroke-width:0;fill-opacity:1;stroke:rgba(65, 65, 65, 1);stroke-opacity:1;fill:rgba(199, 199, 199, 1)" class="style-k1qkrtom_comp-k1qkt6sc style-k1qkrtom_non-scaling-stroke style-k1qkrtomsvg" id="comp-k1qkt6scsvg">
+																								<svg preserveAspectRatio="none" data-bbox="0 0 334.805 289.949" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 334.805 289.949" role="img">
+																									<g>
+																										<path d="M167.402 0l167.403 289.949H0L167.402 0z"/>
+																									</g>
+																								</svg>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div id="comp-k1qk8li2-rotated-wrapper" data-mesh-internal="true">
+																		<div id="comp-k1qk8li2" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="36" data-height="37" style="top:;bottom:;left:;right:;width:36px;height:37px;position:;transform:rotate(270deg)" data-angle="270" class="style-k1qk82gm" data-state="desktop shouldUseFlex center">
+																			<div id="comp-k1qk8li2link" class="style-k1qk82gmlink">
+																				<span id="comp-k1qk8li2label" class="style-k1qk82gmlabel"></span>
+																			</div>
+																		</div>
+																	</div>
+																	<div style="top:;bottom:;left:;right:;position:" class="style-k1qkjvrw" id="comp-k1qkmrm9">
+																		<div id="comp-k1qkmrm9bg" class="style-k1qkjvrwbg"></div>
+																		<div class="style-k1qkjvrwinlineContent" id="comp-k1qkmrm9inlineContent">
+																			<div id="comp-k1qkmrm9inlineContent-gridWrapper" data-mesh-internal="true">
+																				<div id="comp-k1qkmrm9inlineContent-gridContainer" data-mesh-internal="true">
+																					<div id="comp-k1qkurmf-rotated-wrapper" data-mesh-internal="true">
+																						<div data-svg-id="6b1da864ef84b466c566b1aac7ed2e1e_svgshape.v1.Triangle.svg" data-svg-type="shape" data-display-mode="stretch" data-strokewidth="0" data-viewbox="-20.924 -26.943 377 377" data-preserve-viewbox="ignore" style="top:;bottom:;left:;right:;width:18px;height:16px;position:;transform:rotate(90deg)" data-angle="90" class="style-k1qkrtom" id="comp-k1qkurmf">
+																							<div id="comp-k1qkurmflink" class="style-k1qkrtomlink">
+																								<div style="transform:scale(1, -1);stroke-width:0;fill-opacity:1;stroke:rgba(65, 65, 65, 1);stroke-opacity:1;fill:rgba(199, 199, 199, 1)" class="style-k1qkrtom_comp-k1qkurmf style-k1qkrtom_non-scaling-stroke style-k1qkrtomsvg" id="comp-k1qkurmfsvg">
+																									<svg preserveAspectRatio="none" data-bbox="0 0 334.805 289.949" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 334.805 289.949" role="img">
+																										<g>
+																											<path d="M167.402 0l167.403 289.949H0L167.402 0z"/>
+																										</g>
+																									</svg>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div id="comp-k1qk8ny7-rotated-wrapper" data-mesh-internal="true">
+																		<div id="comp-k1qk8ny7" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="36" data-height="37" style="top:;bottom:;left:;right:;width:36px;height:37px;position:;transform:rotate(270deg)" data-angle="270" class="style-k1qk82gm" data-state="desktop shouldUseFlex center">
+																			<div id="comp-k1qk8ny7link" class="style-k1qk82gmlink">
+																				<span id="comp-k1qk8ny7label" class="style-k1qk82gmlabel"></span>
+																			</div>
+																		</div>
+																	</div>
+																	<div style="top:;bottom:;left:;right:;position:" class="style-k1qkjvrw" id="comp-k1qklksz">
+																		<div id="comp-k1qklkszbg" class="style-k1qkjvrwbg"></div>
+																		<div class="style-k1qkjvrwinlineContent" id="comp-k1qklkszinlineContent">
+																			<div id="comp-k1qklkszinlineContent-gridWrapper" data-mesh-internal="true">
+																				<div id="comp-k1qklkszinlineContent-gridContainer" data-mesh-internal="true">
+																					<div id="comp-k1qkvvzc-rotated-wrapper" data-mesh-internal="true">
+																						<div data-svg-id="6b1da864ef84b466c566b1aac7ed2e1e_svgshape.v1.Triangle.svg" data-svg-type="shape" data-display-mode="stretch" data-strokewidth="0" data-viewbox="-20.924 -26.943 377 377" data-preserve-viewbox="ignore" style="top:;bottom:;left:;right:;width:18px;height:16px;position:;transform:rotate(90deg)" data-angle="90" class="style-k1qkrtom" id="comp-k1qkvvzc">
+																							<div id="comp-k1qkvvzclink" class="style-k1qkrtomlink">
+																								<div style="transform:scale(-1, 1);stroke-width:0;fill-opacity:1;stroke:rgba(65, 65, 65, 1);stroke-opacity:1;fill:rgba(199, 199, 199, 1)" class="style-k1qkrtom_comp-k1qkvvzc style-k1qkrtom_non-scaling-stroke style-k1qkrtomsvg" id="comp-k1qkvvzcsvg">
+																									<svg preserveAspectRatio="none" data-bbox="0 0 334.805 289.949" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 334.805 289.949" role="img">
+																										<g>
+																											<path d="M167.402 0l167.403 289.949H0L167.402 0z"/>
+																										</g>
+																									</svg>
+																								</div>
+																							</div>
+																						</div>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div id="comp-k1qk8r46-rotated-wrapper" data-mesh-internal="true">
+																		<div id="comp-k1qk8r46" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="36" data-height="37" style="top:;bottom:;left:;right:;width:36px;height:37px;position:;transform:rotate(270deg)" data-angle="270" class="style-k1qk82gm" data-state="desktop shouldUseFlex center">
+																			<div id="comp-k1qk8r46link" class="style-k1qk82gmlink">
+																				<span id="comp-k1qk8r46label" class="style-k1qk82gmlabel"></span>
+																			</div>
+																		</div>
+																	</div>
+																	<div style="top:;bottom:;left:;right:;position:" class="style-k1qkjvrw" id="comp-k1qki8h7">
+																		<div id="comp-k1qki8h7bg" class="style-k1qkjvrwbg"></div>
+																		<div class="style-k1qkjvrwinlineContent" id="comp-k1qki8h7inlineContent">
+																			<div id="comp-k1qki8h7inlineContent-gridWrapper" data-mesh-internal="true">
+																				<div id="comp-k1qki8h7inlineContent-gridContainer" data-mesh-internal="true">
+																					<div data-packed="true" style="top:;bottom:;left:;right:;width:90px;height:auto;position:;pointer-events:none" class="txtNew" id="comp-k1ql469a">
+																						<h2 class="font_2" style="font-size:11px; text-align:center;">
+																							<span style="font-size:11px;">
+																								<span class="color_11">
+																									<span style="font-family:futura-lt-w01-book,sans-serif;">VOLUME</span>
+																								</span>
+																							</span>
+																						</h2>
+																					</div>
+																					<div data-packed="true" style="top:;bottom:;left:;right:;width:54px;height:auto;position:;pointer-events:none" class="txtNew" id="comp-k1qkx7xc">
+																						<h2 class="font_2" style="font-size:9px; text-align:center;">
+																							<span style="font-size:9px;">
+																								<span style="color:#FFFFFF;">
+																									<span style="font-family:lulo-clean-w01-one-bold,sans-serif;">FADER</span>
+																								</span>
+																							</span>
+																						</h2>
+																						<h2 class="font_2" style="font-size:9px; text-align:center;">
+																							<span style="font-size:9px;">
+																								<span style="color:#FFFFFF;">
+																									<span style="font-family:lulo-clean-w01-one-bold,sans-serif;">CTRL</span>
+																								</span>
+																							</span>
+																						</h2>
+																					</div>
+																					<div data-packed="true" style="top:;bottom:;left:;right:;width:90px;height:auto;position:;pointer-events:none" class="txtNew" id="comp-k1ql6mqd">
+																						<h2 class="font_2" style="font-size:11px; text-align:center;">
+																							<span style="font-size:11px;">
+																								<span class="color_11">
+																									<span style="font-family:futura-lt-w01-book,sans-serif;">PAN</span>
+																								</span>
+																							</span>
+																						</h2>
+																					</div>
+																					<div data-packed="true" style="top:;bottom:;left:;right:;width:90px;height:auto;position:;pointer-events:none" class="txtNew" id="comp-k1ql7jp1">
+																						<h2 class="font_2" style="font-size:11px; text-align:center;">
+																							<span style="font-size:11px;">
+																								<span class="color_11">
+																									<span style="font-family:futura-lt-w01-book,sans-serif;">SEND</span>
+																								</span>
+																							</span>
+																						</h2>
+																					</div>
+																					<div data-packed="true" style="top:;bottom:;left:;right:;width:90px;height:auto;position:;pointer-events:none" class="txtNew" id="comp-k1ql86nt">
+																						<h2 class="font_2" style="font-size:11px; text-align:center;">
+																							<span style="font-size:11px;">
+																								<span class="color_11">
+																									<span style="font-family:futura-lt-w01-book,sans-serif;">DEVICE</span>
+																								</span>
+																							</span>
+																						</h2>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div id="comp-k1qk8tu8-rotated-wrapper" data-mesh-internal="true">
+																		<div id="comp-k1qk8tu8" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="36" data-height="37" style="top:;bottom:;left:;right:;width:36px;height:37px;position:;transform:rotate(270deg)" data-angle="270" class="style-k1qk82gm" data-state="desktop shouldUseFlex center">
+																			<div id="comp-k1qk8tu8link" class="style-k1qk82gmlink">
+																				<span id="comp-k1qk8tu8label" class="style-k1qk82gmlabel"></span>
+																			</div>
+																		</div>
+																	</div>
+																	<div id="comp-k1qk8x20-rotated-wrapper" data-mesh-internal="true">
+																		<div id="comp-k1qk8x20" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="36" data-height="37" style="top:;bottom:;left:;right:;width:36px;height:37px;position:;transform:rotate(270deg)" data-angle="270" class="style-k1qk82gm" data-state="desktop shouldUseFlex center">
+																			<div id="comp-k1qk8x20link" class="style-k1qk82gmlink">
+																				<span id="comp-k1qk8x20label" class="style-k1qk82gmlabel"></span>
+																			</div>
+																		</div>
+																	</div>
+																	<div id="comp-k1qk90xl-rotated-wrapper" data-mesh-internal="true">
+																		<div id="comp-k1qk90xl" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="36" data-height="37" style="top:;bottom:;left:;right:;width:36px;height:37px;position:;transform:rotate(270deg)" data-angle="270" class="style-k1qk82gm" data-state="desktop shouldUseFlex center">
+																			<div id="comp-k1qk90xllink" class="style-k1qk82gmlink">
+																				<span id="comp-k1qk90xllabel" class="style-k1qk82gmlabel"></span>
+																			</div>
+																		</div>
+																	</div>
+																	<div id="comp-k1qk94hm-rotated-wrapper" data-mesh-internal="true">
+																		<div id="comp-k1qk94hm" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="36" data-height="37" style="top:;bottom:;left:;right:;width:36px;height:37px;position:;transform:rotate(270deg)" data-angle="270" class="style-k1qk82gm" data-state="desktop shouldUseFlex center">
+																			<div id="comp-k1qk94hmlink" class="style-k1qk82gmlink"><span id="comp-k1qk94hmlabel" class="style-k1qk82gmlabel"></span></div>
+																		</div>
+																	</div>
+																	<div style="top:;bottom:;left:;right:;position:" class="style-k1qkjvrw" id="comp-k1qkq6o2">
+																		<div id="comp-k1qkq6o2bg" class="style-k1qkjvrwbg"></div>
+																		<div class="style-k1qkjvrwinlineContent" id="comp-k1qkq6o2inlineContent">
+																			<div id="comp-k1qkq6o2inlineContent-gridWrapper" data-mesh-internal="true">
+																				<div id="comp-k1qkq6o2inlineContent-gridContainer" data-mesh-internal="true">
+																					<div data-packed="true" style="top:;bottom:;left:;right:;width:54px;height:auto;position:;pointer-events:none" class="txtNew" id="comp-k1ql93oa">
+																						<h2 class="font_2" style="font-size:11px; text-align:center;">
+																							<span style="font-size:11px;">
+																								<span class="color_11">
+																									<span style="font-family:futura-lt-w01-book,sans-serif;">SHIFT</span>
+																								</span>
+																							</span>
+																						</h2>
+																					</div>
+																				</div>
+																			</div>
+																		</div>
+																	</div>
+																	<div id="comp-k1qkaw80-rotated-wrapper" data-mesh-internal="true">
+																		<div id="comp-k1qkaw80" data-align="center" data-disabled="false" data-margin="0" data-should-use-flex="true" data-width="36" data-height="37" style="top:;bottom:;left:;right:;width:36px;height:37px;position:;transform:rotate(270deg)" data-angle="270" class="style-k1qkbll4" data-state="desktop shouldUseFlex center">
+																			<div id="comp-k1qkaw80link" class="g-transparent-a style-k1qkbll4link">
+																				<span id="comp-k1qkaw80label" class="style-k1qkbll4label"></span>
+																			</div>
+																		</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div data-packed="true" style="top:;bottom:;left:;right:;width:39px;height:auto;position:;pointer-events:none" class="txtNew" id="comp-k1qlcy72">
+														<h2 class="font_2" style="font-size:11px; text-align:center;">
+															<span style="font-size:11px;">
+																<span class="color_11">
+																	<span style="font-family:futura-lt-w01-book,sans-serif;">CLIP</span>
+																</span>
+															</span>
+														</h2>
+														<h2 class="font_2" style="font-size:11px; text-align:center;">
+															<span style="font-size:11px;">
+																<span class="color_11">
+																	<span style="font-family:futura-lt-w01-book,sans-serif;">STOP</span>
+																</span>
+															</span>
+														</h2>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</main>
+					<footer style="bottom:auto;left:0;margin-left:0;width:100%;min-width:980px;top:;right:;position:" class="fc1_footer fc1" data-site-width="980" data-fixedposition="false" data-isrunninginmobile="false" data-state=" " id="SITE_FOOTER">
+						<div style="left:0;width:100%" id="SITE_FOOTERscreenWidthBackground" class="fc1screenWidthBackground"></div>
+						<div style="width:100%" id="SITE_FOOTERcenteredContent" class="fc1centeredContent">
+							<div style="margin-left:calc((100% - 980px) / 2);width:980px" id="SITE_FOOTERbg" class="fc1bg"></div>
+							<div id="SITE_FOOTERinlineContent" class="fc1inlineContent">
+								<div id="SITE_FOOTERinlineContent-gridWrapper" data-mesh-internal="true">
+									<div id="SITE_FOOTERinlineContent-gridContainer" data-mesh-internal="true">
+										<div style="top:;bottom:;left:;right:;position:" class="style-k1qjsz1r" id="comp-k1qjptt0">
+											<div id="comp-k1qjptt0bg" class="style-k1qjsz1rbg"></div>
+											<div class="style-k1qjsz1rinlineContent" id="comp-k1qjptt0inlineContent"><span class="copyrirght">Copyright © 2019 Matic Šulc, Kevin Baron Lah.</span></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</footer>
+				</div>
+			</div>
+			<div class="font-ruler-container" style="overflow:hidden;visibility:hidden;max-height:0;max-width:0;position:absolute">
+				<div style="position:absolute;overflow:hidden;font-size:1200px;left:-2000px;visibility:hidden">
+					<div style="position:relative;white-space:nowrap;font-family:serif">
+						<div style="position:absolute;width:100%;height:100%;overflow:hidden"></div>
+						<span class="font-ruler-content"></span>
+					</div>
+				</div>
+				<div style="position:absolute;overflow:hidden;font-size:1200px;left:-2000px;visibility:hidden">
+					<div style="position:relative;white-space:nowrap;font-family:serif">
+						<div style="position:absolute;width:100%;height:100%;overflow:hidden"></div>
+						<span class="font-ruler-content"></span>
+					</div>
+				</div>
+				<div style="position:absolute;overflow:hidden;font-size:1200px;left:-2000px;visibility:hidden">
+					<div style="position:relative;white-space:nowrap;font-family:serif">
+						<div style="position:absolute;width:100%;height:100%;overflow:hidden"></div>
+						<span class="font-ruler-content"></span>
+					</div>
+				</div>
+				<div style="position:absolute;overflow:hidden;font-size:1200px;left:-2000px;visibility:hidden">
+					<div style="position:relative;white-space:nowrap;font-family:serif">
+						<div style="position:absolute;width:100%;height:100%;overflow:hidden"></div>
+						<span class="font-ruler-content"></span>
+					</div>
+				</div>
+				<div style="position:absolute;overflow:hidden;font-size:1200px;left:-2000px;visibility:hidden">
+					<div style="position:relative;white-space:nowrap;font-family:serif">
+						<div style="position:absolute;width:100%;height:100%;overflow:hidden"></div>
+						<span class="font-ruler-content"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="main.js"></script>
+		<script src="http://localhost:8081/socket.io/socket.io.js"></script>
+		<script src="/scripts/JZZ.js"></script>
+		<script src="/scripts/JZZ.synth.Tiny.js"></script>
+		<script src="/scripts/JZZ.input.Kbd.js"></script>
+		<script src="/scripts/midi.js"></script>
+</body>
+</html>
