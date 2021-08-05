@@ -28,7 +28,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/maxtheashepherd/ledcontrol">
-    <img src="icon/128x128.png" alt="Logo" width="80" height="80">
+    <img src="icon/128x128.png" alt="Logo" width="128" height="128">
   </a>
+ <h3 align="center">#AKAI APC Mini led control</h3>
 
-# AKAI APC Mini led control software
