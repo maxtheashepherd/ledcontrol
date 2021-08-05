@@ -116,6 +116,7 @@ Project Link: [https://github.com/maxtheashepherd/ledcontrol](https://github.com
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[product-screenshot]:https://github.com/maxtheashepherd/ledcontrol/icons/slika.png
 [contributors-shield]: https://img.shields.io/github/contributors/maxtheashepherd/ledcontrol.svg?style=for-the-badge
 [contributors-url]: https://github.com/maxtheashepherd/ledcontrol/graphs/contributors
 [forks-shield]: https://img.shields.io/github/forks/maxtheashepherd/ledcontrol.svg?style=for-the-badge
