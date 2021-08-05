@@ -77,7 +77,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://github.com/maxtheashepherd/ledcontrol/icons/slika.png)
+  <a href="https://github.com/maxtheashepherd/ledcontrol">
+    <img src="icon/slika.png" alt="Logo" >
+  </a>
 
 <!-- ROADMAP -->
 ## Roadmap
