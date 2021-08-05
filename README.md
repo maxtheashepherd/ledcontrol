@@ -77,7 +77,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://github.com/maxtheashepherd/ledcontrol/icons/slika.png)
 
 <!-- ROADMAP -->
 ## Roadmap
