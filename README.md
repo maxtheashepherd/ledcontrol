@@ -1,31 +1,3 @@
-<!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Thanks again! Now go create something AMAZING! :D
--->
-
-
-
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-
-
-
-
-<!-- PROJECT LOGO -->
-<br />
 <p align="center">
   <a href="https://github.com/maxtheashepherd/ledcontrol">
     <img src="icon/128x128.png" alt="Logo" width="128" height="128">
@@ -39,8 +11,6 @@
     <a href="https://github.com/maxtheashepherd/ledcontrol"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/maxtheashepherd/ledcontrol">View Demo</a>
-    ·
     <a href="https://github.com/maxtheashepherd/ledcontrol/issues">Report Bug</a>
     ·
     <a href="https://github.com/maxtheashepherd/ledcontrol/issues">Request Feature</a>
@@ -83,8 +53,6 @@
   </a>
 </p>
 
-xxx
-
 ### Built With
 
 
@@ -99,25 +67,12 @@ xxx
 
 
 ### Prerequisites
-xxx
+* Node.js (14.0+)
 
-
-### Installation
-xxx
-
-<!-- USAGE EXAMPLES -->
-## Usage
-xxx
-
-_For more examples, please refer to the [Documentation](https://github.com/maxtheashepherd/ledcontrol)_
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/maxtheashepherd/ledcontro/issues) for a list of proposed features (and known issues).
-
-
+### Installation and usage
+Latest builds are already compiled and available in build/AKAI APC Mini LED Controller.
+For building your own version, compile using latest NWJS and package for your desired os. 
+For more information regarding building this package, please visit https://nwjs.readthedocs.io/en/latest/.
 
 <!-- CONTRIBUTING -->
 ## Contributing
@@ -142,23 +97,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Contact
 
 Max Shepherd - [@Max__Shepherd](https://twitter.com/Max__Shepherd) - maxtheashepherd@gmail.com
+Matic Šulc - [@MaticSulc](https://github.com/MaticSulc)
 
 Project Link: [https://github.com/maxtheashepherd/ledcontrol](https://github.com/maxtheashepherd/ledcontrol)
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[product-screenshot]:https://github.com/maxtheashepherd/ledcontrol/icons/slika.png
-[contributors-shield]: https://img.shields.io/github/contributors/maxtheashepherd/ledcontrol.svg?style=for-the-badge
-[contributors-url]: https://github.com/maxtheashepherd/ledcontrol/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/maxtheashepherd/ledcontrol.svg?style=for-the-badge
-[forks-url]: https://github.com/maxtheashepherd/ledcontrol/network/members
-[stars-shield]: https://img.shields.io/github/stars/maxtheashepherd/ledcontrol.svg?style=for-the-badge
-[stars-url]: https://github.com/maxtheashepherd/ledcontrol/stargazers
-[issues-shield]: https://img.shields.io/github/issues/maxtheashepherd/ledcontrol.svg?style=for-the-badge
-[issues-url]: https://github.com/maxtheashepherd/ledcontrol/issues
-[license-shield]: https://img.shields.io/github/license/maxtheashepherd/ledcontrol.svg?style=for-the-badge
-[license-url]: https://github.com/maxtheashepherd/ledcontrol/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 
