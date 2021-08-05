@@ -78,9 +78,10 @@
 ## About The Project
  <p align="center">
   <a href="https://github.com/maxtheashepherd/ledcontrol">
-    <img src="icon/slika.png" alt="Logo" >
+    <img src="icon/slika.png" alt="Logo" width="800" height="600" >
   </a>
 </p>
+
 <!-- ROADMAP -->
 ## Roadmap
 
