@@ -76,11 +76,41 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
+
  <p align="center">
   <a href="https://github.com/maxtheashepherd/ledcontrol">
     <img src="icon/slika.png" alt="Logo" width="800" height="600" >
   </a>
 </p>
+
+xxx
+
+### Built With
+
+This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
+* [HTML]()
+* [CSS]()
+* [NodeJS](https://nodejs.org/en/)
+* [NWJS](https://nwjs.io/)
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+
+
+### Prerequisites
+xxx
+
+
+### Installation
+xxx
+
+<!-- USAGE EXAMPLES -->
+## Usage
+xxx
+
+_For more examples, please refer to the [Documentation](https://github.com/maxtheashepherd/ledcontrol)_
+
 
 <!-- ROADMAP -->
 ## Roadmap
