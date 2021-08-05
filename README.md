@@ -70,17 +70,17 @@
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
+  
   </ol>
 </details>
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-
+ <p align="center">
   <a href="https://github.com/maxtheashepherd/ledcontrol">
     <img src="icon/slika.png" alt="Logo" >
   </a>
-
+</p>
 <!-- ROADMAP -->
 ## Roadmap
 
