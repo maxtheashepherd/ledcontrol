@@ -38,6 +38,7 @@
 
 ### Prerequisites
 * Node.js (14.0+)
+* [loopMIDI](https://www.tobias-erichsen.de/software/loopmidi.html)
 
 ### Installation and usage
 Latest builds are already compiled and available in build/AKAI APC Mini LED Controller.
