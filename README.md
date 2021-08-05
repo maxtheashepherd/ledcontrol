@@ -28,13 +28,13 @@
 <br />
 <p align="center">
   <a href="https://github.com/maxtheashepherd/ledcontrol">
-    <img src="icon/icon.svg" alt="Logo" width="200" height="200">
+    <img src="icon/128x128.png" alt="Logo" width="128" height="128">
   </a>
 
-  <h3 align="center">Best-README-Template</h3>
+  <h3 align="center">AKAI APC mini LED Control</h3>
 
   <p align="center">
-    sad
+    The software allows you to control lights on your apc mini control.
     <br />
     <a href="https://github.com/maxtheashepherd/ledcontrol"><strong>Explore the docs »</strong></a>
     <br />
