@@ -66,7 +66,8 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Max Shepherd - [@Max__Shepherd](https://twitter.com/Max__Shepherd) - maxtheashepherd@gmail.com
+Max Shepherd - [@Max__Shepherd](https://twitter.com/Max__Shepherd) - maxtheashepherd@gmail.com 
+<br />
 Matic Šulc - [@MaticSulc](https://github.com/MaticSulc)
 
 Project Link: [https://github.com/maxtheashepherd/ledcontrol](https://github.com/maxtheashepherd/ledcontrol)
